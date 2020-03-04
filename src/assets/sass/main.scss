@@ -1190,6 +1190,7 @@ button,
 .spotlight {
   @include vendor('align-items', 'center');
   @include vendor('display', 'flex');
+  margin: 10px;
 
   .image {
     @include vendor('order', '1');
@@ -1200,6 +1201,7 @@ button,
       margin: 10 0;
       border-radius: 0;
       width: 100%;
+      padding: 12px;
     }
   }
 
@@ -1218,7 +1220,7 @@ button,
     $j: 0.075 * $i;
 
     &:nth-child(#{$i}) {
-      background-color: rgba(0, 0, 0, $j);
+      background-color: rgba(29, 36, 42, 0.9);
     }
   }
 
@@ -1461,7 +1463,7 @@ button,
 }
 
 .wrapper {
-  @include padding(6em, 0);
+  @include padding(3em, 0);
 
   > .inner {
     width: 60em;
@@ -1485,7 +1487,7 @@ button,
   }
 
   &.style2 {
-    background-color: _palette(bg);
+    background-color: transparent;
   }
 
   &.style3 {
