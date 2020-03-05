@@ -14,6 +14,18 @@ const IndexPage = () => (
       <div className="inner">
         <h2>{config.heading}</h2>
         <p>{config.subHeading}</p>
+        <ul className="icons">
+          {config.socialLinks.map(social => {
+            const { style, icon, name, url } = social;
+            return (
+              <li key={url}>
+                <a href={url} className={`icon ${style} ${icon}`}>
+                  <span className="label">{name}</span>
+                </a>
+              </li>
+            );
+          })}
+        </ul>
         <ul className="actions special">
           {/* <li>
             <Scroll type="id" element="one">
@@ -36,10 +48,20 @@ const IndexPage = () => (
         <header className="major">
           <h2>About me</h2>
           <p>
-            Full stack developer
+            Hello! My name is Jose and welcome to my awesome Website!
             <br />
-            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-            ullamcorper.
+            I have expertise as Full-Stack Web developer by using the most
+            awesome technologies and frameworks approved by the software
+            industry.
+            <br />
+            I'm working right now using React-Native and looking forward to
+            develope better skills as a developer.
+            <br />
+            My teammates know me as a highly cooperative developer and a
+            hard-worker person by always bringing the most creative and awesome
+            solutions for every project that i face. I always try to be a
+            cross-functional, business oriented and quality focused developer in
+            the team.
           </p>
         </header>
         <ul className="icons major">
@@ -132,11 +154,9 @@ const IndexPage = () => (
         <header className="major">
           <h2>Skills</h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-            eleifend
+            I've worked using differents languages like Javascript, HTML, CSS,
+            React, React-Native, PHP just to name a few.
             <br />
-            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-            ullamcorper.
           </p>
         </header>
         <ul className="features">
@@ -152,13 +172,13 @@ const IndexPage = () => (
             </p>
           </li>
 
-          <li className="icon fa-heart">
+          {/* <li className="icon fa-heart">
             <h3>Favorites</h3>
             <p>
               Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
               tincidunt nullam amet leo Aenean ligula consequat consequat.
             </p>
-          </li>
+          </li> */}
         </ul>
       </div>
     </section>
