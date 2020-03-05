@@ -105,6 +105,7 @@ const IndexPage = () => (
             from other people going through the same issues and experts guiding
             them along the recovery journey.
           </p>
+          <a href="https://github.com/jmvr37">Source Code</a>
         </div>
       </section>
       <section className="spotlight">
@@ -118,6 +119,7 @@ const IndexPage = () => (
             customers, the app was developed using React and MongoDB for data
             base.
           </p>
+          <a href="https://github.com/jmvr37">Source Code</a>
         </div>
       </section>
       <section className="spotlight">
@@ -131,6 +133,7 @@ const IndexPage = () => (
             Inhabitent Camping Supply Co. using WordPress as a content
             management system.
           </p>
+          <a href="https://github.com/jmvr37/inhabitent">Source Code</a>
         </div>
       </section>
       <section className="spotlight">
@@ -143,6 +146,7 @@ const IndexPage = () => (
             One-page, responsive website that allows a user to filter top news
             story categories via the New York Times API.
           </p>
+          <a href="https://github.com/jmvr37/Instanews">Source Code</a>
         </div>
       </section>
       <section className="spotlight">
@@ -157,6 +161,7 @@ const IndexPage = () => (
             styles, the database was built using Postgress & Postico and hooked
             using Apollo.
           </p>
+          <a href="https://github.com/jmvr37/boomtown">Source Code</a>
         </div>
       </section>
     </section>
