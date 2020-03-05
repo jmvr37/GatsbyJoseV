@@ -6,6 +6,7 @@ import instanews from '../assets/images/instanews.jpeg';
 import beyond from '../assets/images/beyond.jpeg';
 import boomtown from '../assets/images/boomtown.png';
 import dimsum from '../assets/images/dimsum.jpeg';
+import larivo from '../assets/images/larivo.png';
 import config from '../../config';
 
 const IndexPage = () => (
@@ -77,10 +78,41 @@ const IndexPage = () => (
     <section id="two" className="wrapper alt style2">
       <section className="spotlight">
         <div className="image">
+          <img src={larivo} alt="" />
+        </div>
+        <div className="content">
+          <h2>Larivo</h2>
+          <p>
+            A safe platform to tell and listen to stories about mental health
+            and incredible journeys to recovery.
+            <br />
+            Feel comfortable telling your story by choosing any level of
+            anonymity to help you share your experience and journey.
+          </p>
+          <a href="https://larivo.ca">Go to the Website</a>
+        </div>
+      </section>
+      <section className="spotlight">
+        <div className="image">
           <img src={beyond} alt="" />
         </div>
         <div className="content">
           <h2>Beyond the Conversation</h2>
+          <p>
+            Mental Health website created side by side with an amazing
+            non-profit organization founder by Amie Peacock, helping people
+            suffering with social isolation, depression & falls to find support
+            from other people going through the same issues and experts guiding
+            them along the recovery journey.
+          </p>
+        </div>
+      </section>
+      <section className="spotlight">
+        <div className="image">
+          <img src={dimsum} alt="" />
+        </div>
+        <div className="content">
+          <h2>Dim Sum App</h2>
           <p>
             Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
             imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
@@ -117,30 +149,6 @@ const IndexPage = () => (
         </div>
         <div className="content">
           <h2>Boomtown</h2>
-          <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
-          </p>
-        </div>
-      </section>
-      <section className="spotlight">
-        <div className="image">
-          <img src={dimsum} alt="" />
-        </div>
-        <div className="content">
-          <h2>Dim Sum App</h2>
-          <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
-          </p>
-        </div>
-      </section>
-      <section className="spotlight">
-        <div className="image">
-          <img src={instanews} alt="" />
-        </div>
-        <div className="content">
-          <h2>Larivo</h2>
           <p>
             Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
             imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
