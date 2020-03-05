@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import Layout from '../components/Layout';
 import Scroll from '../components/Scroll';
 import inhabitent from '../assets/images/inhabitent.jpeg';
@@ -179,14 +180,11 @@ const IndexPage = () => (
         <ul className="features">
           <li className="icon solid fa-laptop">
             <h3>Front-End</h3>
-            <p>HTML, CSS, PHP, JavaScript, JQuery, ReactJs & Node.js</p>
+            <p>HTML, CSS,JavaScript, JQuery, ReactJs & Node.js</p>
           </li>
           <li className="icon solid fa-code">
             <h3>Back-End</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
+            <p>PHP, MondoDb, React, Postgress, Postico.</p>
           </li>
 
           {/* <li className="icon fa-heart">
@@ -203,22 +201,17 @@ const IndexPage = () => (
     <section id="cta" className="wrapper style4">
       <div className="inner">
         <header>
-          <h2>Arcue ut vel commodo</h2>
+          <h2>Open to new projects</h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet
-            eleifend fringilla.
+            Do you like my work? im available to work with new projects, you can
+            reach me clicking the icons below.
           </p>
         </header>
         <ul className="actions stacked">
           <li>
-            <a href="/#" className="button fit primary">
-              Activate
-            </a>
-          </li>
-          <li>
-            <a href="/#" className="button fit">
-              Learn More
-            </a>
+            <Link to="/Generic" className="button fit primary">
+              My Resume
+            </Link>
           </li>
         </ul>
       </div>
