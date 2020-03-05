@@ -127,8 +127,9 @@ const IndexPage = () => (
         <div className="content">
           <h2>Inhabitent</h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+            Multi-page website with a blog for a camping supply company called
+            Inhabitent Camping Supply Co. using WordPress as a content
+            management system.
           </p>
         </div>
       </section>
@@ -139,8 +140,8 @@ const IndexPage = () => (
         <div className="content">
           <h2>Instanews</h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+            One-page, responsive website that allows a user to filter top news
+            story categories via the New York Times API.
           </p>
         </div>
       </section>
@@ -151,8 +152,10 @@ const IndexPage = () => (
         <div className="content">
           <h2>Boomtown</h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+            Back-end server to support a sharing interface, supporting login and
+            create new users this app was built using React and Material UI for
+            styles, the database was built using Postgress & Postico and hooked
+            using Apollo.
           </p>
         </div>
       </section>
