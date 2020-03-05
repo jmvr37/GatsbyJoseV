@@ -851,6 +851,7 @@ ul.actions {
   &.stacked {
     @include vendor('flex-direction', 'column');
     margin-left: 0;
+    justify-content: center;
 
     li {
       padding: (_size(element-margin) * 0.5) 0 0 0;

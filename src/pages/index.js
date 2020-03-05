@@ -208,11 +208,9 @@ const IndexPage = () => (
           </p>
         </header>
         <ul className="actions stacked">
-          <li>
-            <Link to="/Generic" className="button fit primary">
-              My Resume
-            </Link>
-          </li>
+          <Link to="/Generic" className="button fit primary">
+            My Resume
+          </Link>
         </ul>
       </div>
     </section>
