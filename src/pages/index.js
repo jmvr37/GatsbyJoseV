@@ -112,10 +112,11 @@ const IndexPage = () => (
           <img src={dimsum} alt="" />
         </div>
         <div className="content">
-          <h2>Dim Sum App</h2>
+          <h2>Dim Sum/Self Order App</h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+            Website App created to support restaurant staff managing orders from
+            customers, the app was developed using React and MongoDB for data
+            base.
           </p>
         </div>
       </section>
