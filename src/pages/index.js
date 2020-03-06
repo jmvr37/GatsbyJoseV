@@ -40,7 +40,7 @@ const IndexPage = () => (
       </div>
       <Scroll type="id" element="one">
         <a href="#one" className="more">
-          Know me
+          About me
         </a>
       </Scroll>
     </section>
@@ -50,20 +50,16 @@ const IndexPage = () => (
         <header className="major">
           <h2>About me</h2>
           <p>
-            Hello! My name is Jose and welcome to my awesome Website!
-            <br />
-            I have expertise as Full-Stack Web developer by using the most
+            I have expertise as a Full-Stack Web developer by using the most
             awesome technologies and frameworks approved by the software
             industry.
             <br />
             I'm working right now using React-Native and looking forward to
-            develope better skills as a developer.
-            <br />
-            My teammates know me as a highly cooperative developer and a
-            hard-worker person by always bringing the most creative and awesome
-            solutions for every project that i face. I always try to be a
-            cross-functional, business oriented and quality focused developer in
-            the team.
+            develop better skills as a developer. My teammates know me as a
+            highly cooperative developer and a hard-working person by always
+            bringing the most creative and awesome solutions for every project
+            that I face. I always try to be a cross-functional, business
+            oriented and quality focused developer on the team.
           </p>
         </header>
         <ul className="icons major">
@@ -102,9 +98,9 @@ const IndexPage = () => (
           <p>
             Mental Health website created side by side with an amazing
             non-profit organization founder by Amie Peacock, helping people
-            suffering with social isolation, depression & falls to find support
-            from other people going through the same issues and experts guiding
-            them along the recovery journey.
+            suffering with social isolation, depression & anxiety to find
+            support from other people going through the same issues and experts
+            guiding them along the recovery journey.
           </p>
           <a href="https://github.com/jmvr37">Source Code</a>
         </div>
@@ -172,7 +168,7 @@ const IndexPage = () => (
         <header className="major">
           <h2>Skills</h2>
           <p>
-            I've worked using differents languages like Javascript, HTML, CSS,
+            I've worked using different languages like Javascript, HTML, CSS,
             React, React-Native, PHP just to name a few.
             <br />
           </p>
