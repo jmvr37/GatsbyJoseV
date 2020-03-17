@@ -102,7 +102,7 @@ const IndexPage = () => (
             support from other people going through the same issues and experts
             guiding them along the recovery journey.
           </p>
-          <a href="https://github.com/jmvr37">Source Code</a>
+          <a href="https://github.com/jmvr37/beyond-ws1-2019">Source Code</a>
         </div>
       </section>
       <section className="spotlight">
