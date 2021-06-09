@@ -1,11 +1,11 @@
-@import 'libs/vars';
-@import 'libs/functions';
-@import 'libs/mixins';
-@import 'libs/vendor';
-@import 'libs/breakpoints';
-@import 'libs/html-grid';
-@import 'fontawesome-all.min.css';
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic');
+@import "libs/vars";
+@import "libs/functions";
+@import "libs/mixins";
+@import "libs/vendor";
+@import "libs/breakpoints";
+@import "libs/html-grid";
+@import "fontawesome-all.min.css";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
 
 /*
 	Spectral by HTML5 UP
@@ -161,7 +161,7 @@ q {
 
   &:before,
   &:after {
-    content: '';
+    content: "";
     content: none;
   }
 }
@@ -221,8 +221,8 @@ body,
     *,
     *:before,
     *:after {
-      @include vendor('animation', 'none !important');
-      @include vendor('transition', 'none !important');
+      @include vendor("animation", "none !important");
+      @include vendor("transition", "none !important");
     }
   }
 }
@@ -238,15 +238,15 @@ textarea {
   letter-spacing: _size(letter-spacing);
   line-height: 1.65em;
 
-  @include breakpoint('<=xlarge') {
+  @include breakpoint("<=xlarge") {
     font-size: 13pt;
   }
 
-  @include breakpoint('<=large') {
+  @include breakpoint("<=large") {
     font-size: 12pt;
   }
 
-  @include breakpoint('<=small') {
+  @include breakpoint("<=small") {
     font-size: 11pt;
     letter-spacing: _size(letter-spacing) * 0.5;
   }
@@ -254,10 +254,10 @@ textarea {
 
 a {
   @include vendor(
-    'transition',
+    "transition",
     (
-      'color #{_duration(transitions)} ease',
-      'border-bottom-color #{_duration(transitions)} ease'
+      "color #{_duration(transitions)} ease",
+      "border-bottom-color #{_duration(transitions)} ease"
     )
   );
   border-bottom: solid 1px;
@@ -308,7 +308,7 @@ h2 {
   font-size: 1.35em;
   line-height: 1.75em;
 
-  @include breakpoint('<=small') {
+  @include breakpoint("<=small") {
     font-size: 1.1em;
     line-height: 1.65em;
   }
@@ -318,7 +318,7 @@ h3 {
   font-size: 1.15em;
   line-height: 1.75em;
 
-  @include breakpoint('<=small') {
+  @include breakpoint("<=small") {
     font-size: 1em;
     line-height: 1.65em;
   }
@@ -409,24 +409,24 @@ pre {
 .row {
   @include html-grid(1.5em);
 
-  @include breakpoint('<=xlarge') {
-    @include html-grid(1.5em, 'xlarge');
+  @include breakpoint("<=xlarge") {
+    @include html-grid(1.5em, "xlarge");
   }
 
-  @include breakpoint('<=large') {
-    @include html-grid(1.5em, 'large');
+  @include breakpoint("<=large") {
+    @include html-grid(1.5em, "large");
   }
 
-  @include breakpoint('<=medium') {
-    @include html-grid(1.5em, 'medium');
+  @include breakpoint("<=medium") {
+    @include html-grid(1.5em, "medium");
   }
 
-  @include breakpoint('<=small') {
-    @include html-grid(1.5em, 'small');
+  @include breakpoint("<=small") {
+    @include html-grid(1.5em, "small");
   }
 
-  @include breakpoint('<=xsmall') {
-    @include html-grid(1.5em, 'xsmall');
+  @include breakpoint("<=xsmall") {
+    @include html-grid(1.5em, "xsmall");
   }
 }
 
@@ -473,7 +473,7 @@ header {
       position: relative;
 
       &:after {
-        content: '';
+        content: "";
         display: block;
         height: 1px;
       }
@@ -484,12 +484,12 @@ header {
       top: 0;
     }
 
-    @include breakpoint('<=small') {
+    @include breakpoint("<=small") {
       margin: 0 0 _size(element-margin) 0;
     }
   }
 
-  @include breakpoint('<=medium') {
+  @include breakpoint("<=medium") {
     br {
       display: none;
     }
@@ -510,12 +510,12 @@ label {
   margin: 0 0 (_size(element-margin) * 0.5) 0;
 }
 
-input[type='text'],
-input[type='password'],
-input[type='email'],
+input[type="text"],
+input[type="password"],
+input[type="email"],
 select,
 textarea {
-  @include vendor('appearance', 'none');
+  @include vendor("appearance", "none");
   background-color: _palette(border-bg);
   border-radius: 3px;
   border: none;
@@ -554,9 +554,9 @@ select {
   }
 }
 
-input[type='text'],
-input[type='password'],
-input[type='email'],
+input[type="text"],
+input[type="password"],
+input[type="email"],
 select {
   height: _size(element-height);
 }
@@ -565,9 +565,9 @@ textarea {
   padding: 0.75em 1em;
 }
 
-input[type='checkbox'],
-input[type='radio'] {
-  @include vendor('appearance', 'none');
+input[type="checkbox"],
+input[type="radio"] {
+  @include vendor("appearance", "none");
   display: block;
   float: left;
   margin-right: -2em;
@@ -589,7 +589,7 @@ input[type='radio'] {
     &:before {
       background: _palette(border-bg);
       border-radius: 3px;
-      content: '';
+      content: "";
       display: inline-block;
       font-size: 0.8em;
       height: (_size(element-height) * 0.75);
@@ -606,7 +606,7 @@ input[type='radio'] {
     &:before {
       background: _palette(bg);
       color: _palette(fg-bold);
-      content: '\f00c';
+      content: "\f00c";
     }
   }
 
@@ -617,7 +617,7 @@ input[type='radio'] {
   }
 }
 
-input[type='checkbox'] {
+input[type="checkbox"] {
   & + label {
     &:before {
       border-radius: 3px;
@@ -625,7 +625,7 @@ input[type='checkbox'] {
   }
 }
 
-input[type='radio'] {
+input[type="radio"] {
   & + label {
     &:before {
       border-radius: 100%;
@@ -697,12 +697,12 @@ input[type='radio'] {
 
   &.brands {
     &:before {
-      font-family: 'Font Awesome 5 Brands';
+      font-family: "Font Awesome 5 Brands";
     }
   }
 
   &.major {
-    @include vendor('transform', 'rotate(-45deg)');
+    @include vendor("transform", "rotate(-45deg)");
     border-radius: 3px;
     border: solid 2px _palette(border);
     display: inline-block;
@@ -713,12 +713,12 @@ input[type='radio'] {
     width: calc(3em + 2px);
 
     &:before {
-      @include vendor('transform', 'rotate(45deg)');
+      @include vendor("transform", "rotate(45deg)");
       display: inline-block;
       font-size: 1.5em;
     }
 
-    @include breakpoint('<=small') {
+    @include breakpoint("<=small") {
       font-size: 1em;
     }
   }
@@ -825,7 +825,7 @@ dl {
 /* Actions */
 
 ul.actions {
-  @include vendor('display', 'flex');
+  @include vendor("display", "flex");
   cursor: default;
   list-style: none;
   margin-left: (_size(element-margin) * -0.5);
@@ -837,7 +837,7 @@ ul.actions {
   }
 
   &.special {
-    @include vendor('justify-content', 'center');
+    @include vendor("justify-content", "center");
     width: 100%;
     margin-left: 0;
 
@@ -849,7 +849,7 @@ ul.actions {
   }
 
   &.stacked {
-    @include vendor('flex-direction', 'column');
+    @include vendor("flex-direction", "column");
     margin-left: 0;
     justify-content: center;
 
@@ -866,8 +866,8 @@ ul.actions {
     width: calc(100% + #{_size(element-margin) * 0.5});
 
     li {
-      @include vendor('flex-grow', '1');
-      @include vendor('flex-shrink', '1');
+      @include vendor("flex-grow", "1");
+      @include vendor("flex-shrink", "1");
       width: 100%;
 
       > * {
@@ -880,15 +880,15 @@ ul.actions {
     }
   }
 
-  @include breakpoint('<=xsmall') {
+  @include breakpoint("<=xsmall") {
     &:not(.fixed) {
-      @include vendor('flex-direction', 'column');
+      @include vendor("flex-direction", "column");
       margin-left: 0;
       width: 100% !important;
 
       li {
-        @include vendor('flex-grow', '1');
-        @include vendor('flex-shrink', '1');
+        @include vendor("flex-grow", "1");
+        @include vendor("flex-shrink", "1");
         padding: (_size(element-margin) * 0.5) 0 0 0;
         text-align: center;
         width: 100%;
@@ -901,9 +901,9 @@ ul.actions {
           padding-top: 0;
         }
 
-        input[type='submit'],
-        input[type='reset'],
-        input[type='button'],
+        input[type="submit"],
+        input[type="reset"],
+        input[type="button"],
         button,
         .button {
           width: 100%;
@@ -941,7 +941,7 @@ ul.icons {
     li {
       padding-right: 3.5em;
 
-      @include breakpoint('<=small') {
+      @include breakpoint("<=small") {
         padding: 0 1em !important;
       }
     }
@@ -1026,17 +1026,17 @@ table {
 
 /* Button */
 
-input[type='submit'],
-input[type='reset'],
-input[type='button'],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
 button,
 .button {
-  @include vendor('appearance', 'none');
+  @include vendor("appearance", "none");
   @include vendor(
-    'transition',
+    "transition",
     (
-      'background-color #{_duration(transitions)} ease-in-out',
-      'color #{_duration(transitions)} ease-in-out'
+      "background-color #{_duration(transitions)} ease-in-out",
+      "color #{_duration(transitions)} ease-in-out"
     )
   );
   background-color: transparent;
@@ -1102,11 +1102,11 @@ button,
 
   &.disabled,
   &:disabled {
-    @include vendor('pointer-events', 'none');
+    @include vendor("pointer-events", "none");
     opacity: 0.25;
   }
 
-  @include breakpoint('<=small') {
+  @include breakpoint("<=small") {
     height: 3.75em;
     line-height: 3.75em;
   }
@@ -1115,9 +1115,9 @@ button,
 /* Features */
 
 .features {
-  @include vendor('display', 'flex');
-  @include vendor('flex-wrap', 'wrap');
-  @include vendor('justify-content', 'center');
+  @include vendor("display", "flex");
+  @include vendor("flex-wrap", "wrap");
+  @include vendor("justify-content", "center");
   list-style: none;
   padding: 0;
   width: 100%;
@@ -1162,7 +1162,7 @@ button,
       border-bottom-left-radius: 3px;
     }
 
-    @include breakpoint('<=medium') {
+    @include breakpoint("<=medium") {
       @include padding(3em, 2em);
       text-align: center;
 
@@ -1174,7 +1174,7 @@ button,
       }
     }
 
-    @include breakpoint('<=small') {
+    @include breakpoint("<=small") {
       @include padding(3em, 0);
       background-color: transparent !important;
       border-top: solid 2px _palette(border);
@@ -1190,12 +1190,12 @@ button,
 /* Spotlight */
 
 .spotlight {
-  @include vendor('align-items', 'center');
-  @include vendor('display', 'flex');
+  @include vendor("align-items", "center");
+  @include vendor("display", "flex");
   margin: 10px;
 
   .image {
-    @include vendor('order', '1');
+    @include vendor("order", "1");
     border-radius: 0;
     width: 40%;
 
@@ -1209,13 +1209,13 @@ button,
 
   .content {
     @include padding(1em, 2em);
-    @include vendor('order', '2');
+    @include vendor("order", "2");
     max-width: 48em;
     width: 60%;
   }
 
   &:nth-child(2n) {
-    @include vendor('flex-direction', 'row-reverse');
+    @include vendor("flex-direction", "row-reverse");
   }
 
   @for $i from 1 through _misc(max-spotlights) {
@@ -1226,7 +1226,7 @@ button,
     }
   }
 
-  @include breakpoint('<=large') {
+  @include breakpoint("<=large") {
     .image {
       width: 45%;
     }
@@ -1236,7 +1236,7 @@ button,
     }
   }
 
-  @include breakpoint('<=medium') {
+  @include breakpoint("<=medium") {
     display: block;
 
     br {
@@ -1255,7 +1255,7 @@ button,
     }
   }
 
-  @include breakpoint('<=small') {
+  @include breakpoint("<=small") {
     .content {
       @include padding(3em, 2em);
     }
@@ -1323,9 +1323,9 @@ button,
     color: _palette($p, fg-bold);
   }
 
-  input[type='text'],
-  input[type='password'],
-  input[type='email'],
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
   select,
   textarea {
     background-color: _palette($p, border-bg);
@@ -1342,8 +1342,8 @@ button,
     }
   }
 
-  input[type='checkbox'],
-  input[type='radio'] {
+  input[type="checkbox"],
+  input[type="radio"] {
     & + label {
       color: _palette($p, fg);
 
@@ -1436,9 +1436,9 @@ button,
 
   // Button
 
-  input[type='submit'],
-  input[type='reset'],
-  input[type='button'],
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"],
   button,
   .button {
     box-shadow: inset 0 0 0 2px _palette($p, border);
@@ -1457,7 +1457,7 @@ button,
 
   .features {
     li {
-      @include breakpoint('<=small') {
+      @include breakpoint("<=small") {
         border-top-color: _palette($p, border);
       }
     }
@@ -1471,11 +1471,11 @@ button,
     width: 60em;
     margin: 0 auto;
 
-    @include breakpoint('<=large') {
+    @include breakpoint("<=large") {
       width: 90%;
     }
 
-    @include breakpoint('<=medium') {
+    @include breakpoint("<=medium") {
       width: 100%;
     }
   }
@@ -1504,11 +1504,11 @@ button,
     @include wrapper(accent7);
   }
 
-  @include breakpoint('<=medium') {
+  @include breakpoint("<=medium") {
     @include padding(4em, 3em);
   }
 
-  @include breakpoint('<=small') {
+  @include breakpoint("<=small") {
     @include padding(3em, 2em);
   }
 }
@@ -1516,13 +1516,13 @@ button,
 /* Page Wrapper + Menu */
 
 #page-wrapper {
-  @include vendor('transition', 'opacity #{_duration(menu)} ease');
+  @include vendor("transition", "opacity #{_duration(menu)} ease");
   opacity: 1;
   padding-top: 3em;
 
   &:before {
-    background: rgba(0, 0, 0, 0);
-    content: '';
+    background: rgba(0, 0, 0, 0); // background of content in projects
+    content: "";
     display: block;
     display: none;
     height: 100%;
@@ -1535,8 +1535,8 @@ button,
 }
 
 #menu {
-  @include vendor('transform', 'translateX(20em)');
-  @include vendor('transition', 'transform #{_duration(menu)} ease');
+  @include vendor("transform", "translateX(20em)");
+  @include vendor("transition", "transform #{_duration(menu)} ease");
   -webkit-overflow-scrolling: touch;
   background: _palette(accent1, bg);
   color: _palette(accent1, fg-bold);
@@ -1575,7 +1575,7 @@ button,
         text-decoration: none;
         text-transform: uppercase;
 
-        @include breakpoint('<=small') {
+        @include breakpoint("<=small") {
           line-height: 3em;
         }
       }
@@ -1583,7 +1583,7 @@ button,
   }
 
   .close {
-    background-image: url('../images/close.png');
+    background-image: url("../images/close.png");
     background-position: 4.85em 1em;
     background-repeat: no-repeat;
     border: 0;
@@ -1597,7 +1597,7 @@ button,
     width: 7em;
   }
 
-  @include breakpoint('<=small') {
+  @include breakpoint("<=small") {
     padding: 3em 1.5em;
   }
 }
@@ -1612,7 +1612,7 @@ button,
   }
 
   #menu {
-    @include vendor('transform', 'translateX(0)');
+    @include vendor("transform", "translateX(0)");
   }
 }
 
@@ -1620,8 +1620,8 @@ button,
 
 #header {
   @include vendor(
-    'transition',
-    'background-color #{_duration(transitions)} ease'
+    "transition",
+    "background-color #{_duration(transitions)} ease"
   );
   background: _palette(bg);
   height: 3em;
@@ -1633,7 +1633,7 @@ button,
   z-index: _misc(z-index-base);
 
   h1 {
-    @include vendor('transition', 'opacity #{_duration(transitions)} ease');
+    @include vendor("transition", "opacity #{_duration(transitions)} ease");
     height: inherit;
     left: 1.25em;
     line-height: inherit;
@@ -1646,7 +1646,7 @@ button,
       height: inherit;
       line-height: inherit;
 
-      @include breakpoint('<=small') {
+      @include breakpoint("<=small") {
         font-size: 0.8em;
       }
     }
@@ -1683,17 +1683,17 @@ button,
             position: relative;
 
             &:after {
-              background-image: url('../images/bars.png');
+              background-image: url("../images/bars.png");
               background-position: right center;
               background-repeat: no-repeat;
-              content: '';
+              content: "";
               display: inline-block;
               height: 3.75em;
               vertical-align: top;
               width: 2em;
             }
 
-            @include breakpoint('<=small') {
+            @include breakpoint("<=small") {
               padding: 0 1.5em;
 
               span {
@@ -1702,7 +1702,7 @@ button,
             }
           }
 
-          @include breakpoint('<=small') {
+          @include breakpoint("<=small") {
             padding: 0 0 0 1.5em;
           }
         }
@@ -1718,7 +1718,7 @@ button,
     background: transparent;
 
     h1 {
-      @include vendor('pointer-events', 'none');
+      @include vendor("pointer-events", "none");
       opacity: 0;
     }
   }
@@ -1727,9 +1727,9 @@ button,
 /* Banner */
 
 #banner {
-  @include vendor('display', 'flex');
-  @include vendor('flex-direction', 'column');
-  @include vendor('justify-content', 'center');
+  @include vendor("display", "flex");
+  @include vendor("flex-direction", "column");
+  @include vendor("justify-content", "center");
   cursor: default;
   height: 100vh;
   min-height: 35em;
@@ -1738,8 +1738,8 @@ button,
   text-align: center;
 
   h2 {
-    @include vendor('transform', 'scale(1)');
-    @include vendor('transition', ('transform 0.5s ease', 'opacity 0.5s ease'));
+    @include vendor("transform", "scale(1)");
+    @include vendor("transition", ("transform 0.5s ease", "opacity 0.5s ease"));
     display: inline-block;
     font-size: 1.75em;
     opacity: 1;
@@ -1749,10 +1749,10 @@ button,
 
     &:before,
     &:after {
-      @include vendor('transition', 'width 0.85s ease');
-      @include vendor('transition-delay', '0.25s');
+      @include vendor("transition", "width 0.85s ease");
+      @include vendor("transition-delay", "0.25s");
       background: _palette(fg-bold);
-      content: '';
+      content: "";
       display: block;
       height: 2px;
       position: absolute;
@@ -1781,11 +1781,11 @@ button,
 
   .more {
     @include vendor(
-      'transition',
-      ('transform 0.75s ease', 'opacity 0.75s ease')
+      "transition",
+      ("transform 0.75s ease", "opacity 0.75s ease")
     );
-    @include vendor('transition-delay', '3.5s');
-    @include vendor('transform', 'translateY(0)');
+    @include vendor("transition-delay", "3.5s");
+    @include vendor("transform", "translateY(0)");
     border: none;
     bottom: 0;
     color: inherit;
@@ -1804,12 +1804,12 @@ button,
     z-index: 1;
 
     &:after {
-      background-image: url('../images/arrow.png');
+      background-image: url("../images/arrow.png");
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
       bottom: 4em;
-      content: '';
+      content: "";
       display: block;
       height: 1.5em;
       left: 50%;
@@ -1820,10 +1820,10 @@ button,
   }
 
   &:after {
-    @include vendor('pointer-events', 'none');
-    @include vendor('transition', 'opacity #{_duration(fadein)} ease-in-out');
-    @include vendor('transition-delay', '1.25s');
-    content: '';
+    @include vendor("pointer-events", "none");
+    @include vendor("transition", "opacity #{_duration(fadein)} ease-in-out");
+    @include vendor("transition-delay", "1.25s");
+    content: "";
     background: _palette(bg);
     display: block;
     width: 100%;
@@ -1834,7 +1834,7 @@ button,
     opacity: 0;
   }
 
-  @include breakpoint('<=small') {
+  @include breakpoint("<=small") {
     @include padding(7em, 3em);
     height: auto;
     min-height: 0;
@@ -1857,7 +1857,7 @@ body.is-preload,
 .main-body.is-preload {
   #banner {
     h2 {
-      @include vendor('transform', 'scale(0.95)');
+      @include vendor("transform", "scale(0.95)");
       opacity: 0;
 
       &:before,
@@ -1867,7 +1867,7 @@ body.is-preload,
     }
 
     .more {
-      @include vendor('transform', 'translateY(8.5em)');
+      @include vendor("transform", "translateY(8.5em)");
       opacity: 0;
     }
 
@@ -1881,11 +1881,11 @@ body.is-preload,
 
 #cta {
   .inner {
-    @include vendor('display', 'flex');
+    @include vendor("display", "flex");
     max-width: 45em;
 
     header {
-      @include vendor('order', '1');
+      @include vendor("order", "1");
       padding-right: 3em;
       width: 70%;
 
@@ -1895,11 +1895,11 @@ body.is-preload,
     }
 
     .actions {
-      @include vendor('order', '2');
+      @include vendor("order", "2");
       width: 30%;
     }
 
-    @include breakpoint('<=medium') {
+    @include breakpoint("<=medium") {
       display: block;
       text-align: center;
 
@@ -1916,7 +1916,7 @@ body.is-preload,
       }
     }
 
-    @include breakpoint('<=small') {
+    @include breakpoint("<=small") {
       .actions {
         max-width: none;
       }
@@ -1930,9 +1930,9 @@ body.is-preload,
   > header {
     @include padding(12em, 0);
     @include vendor(
-      'background-image',
+      "background-image",
       (
-        'linear-gradient(to top, rgba(0,0,0,0.2), rgba(0,0,0,0.2))',
+        "linear-gradient(to top, rgba(0,0,0,0.2), rgba(0,0,0,0.2))",
         'url("../images/ocean.jpg")'
       )
     );
@@ -1958,19 +1958,19 @@ body.is-preload,
       }
     }
 
-    @include breakpoint('<=xlarge') {
+    @include breakpoint("<=xlarge") {
       @include padding(10em, 0);
     }
 
-    @include breakpoint('<=large') {
+    @include breakpoint("<=large") {
       @include padding(8em, 3em);
     }
 
-    @include breakpoint('<=medium') {
+    @include breakpoint("<=medium") {
       @include padding(10em, 3em);
     }
 
-    @include breakpoint('<=small') {
+    @include breakpoint("<=small") {
       @include padding(5em, 3em);
 
       h2 {
@@ -2037,7 +2037,7 @@ body.is-mobile {
         }
       }
 
-      @include breakpoint('<=xsmall') {
+      @include breakpoint("<=xsmall") {
         border: 0;
         display: block;
         line-height: 1.65em;
@@ -2047,11 +2047,11 @@ body.is-mobile {
     }
   }
 
-  @include breakpoint('<=medium') {
+  @include breakpoint("<=medium") {
     @include padding(4em, 3em);
   }
 
-  @include breakpoint('<=small') {
+  @include breakpoint("<=small") {
     @include padding(3em, 2em);
   }
 }
@@ -2062,9 +2062,9 @@ body.landing,
 .main-body.landing {
   #page-wrapper {
     @include vendor(
-      'background-image',
+      "background-image",
       (
-        'linear-gradient(to top, rgba(0,0,0,0.2), rgba(0,0,0,0.2))',
+        "linear-gradient(to top, rgba(0,0,0,0.2), rgba(0,0,0,0.2))",
         'url("../images/ocean.jpg")'
       )
     );
@@ -2089,9 +2089,9 @@ body.is-mobile {
     #banner,
     .wrapper.style4 {
       @include vendor(
-        'background-image',
+        "background-image",
         (
-          'linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))',
+          "linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))",
           'url("../images/ocean.jpg")'
         )
       );

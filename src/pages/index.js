@@ -1,14 +1,14 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import Layout from '../components/Layout';
-import Scroll from '../components/Scroll';
-import inhabitent from '../assets/images/inhabitent.jpeg';
-import instanews from '../assets/images/instanews.jpeg';
-import beyond from '../assets/images/beyond.jpeg';
-import boomtown from '../assets/images/boomtown.png';
-import dimsum from '../assets/images/dimsum.jpeg';
-import larivo from '../assets/images/larivo.png';
-import config from '../../config';
+import React from "react";
+import { Link } from "gatsby";
+import Layout from "../components/Layout";
+import Scroll from "../components/Scroll";
+import inhabitent from "../assets/images/inhabitent.jpeg";
+import instanews from "../assets/images/instanews.jpeg";
+import beyond from "../assets/images/beyond.jpeg";
+import boomtown from "../assets/images/boomtown.png";
+import dimsum from "../assets/images/dimsum.jpeg";
+import larivo from "../assets/images/larivo.png";
+import config from "../../config";
 
 const IndexPage = () => (
   <Layout>
