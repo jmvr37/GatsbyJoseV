@@ -1,5 +1,5 @@
 import React from 'react';
-import Resume_1 from "../assets/images/resume_1.png";
+import resume from "../assets/images/resume_1.png";
 import Layout from '../components/Layout';
 
 const IndexPage = () => (
@@ -11,7 +11,7 @@ const IndexPage = () => (
       <section className="wrapper style5">
         <div className="inner">
           
-          <img className="image-res" src={Resume_1} alt="resume" />
+          <img className="image-res" src={resume} alt="resume" />
         
         </div>
       </section>
