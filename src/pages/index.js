@@ -54,12 +54,11 @@ const IndexPage = () => (
             awesome technologies and frameworks approved by the software
             industry.
             <br />
-            I'm working right now using React-Native and looking forward to
-            develop better skills as a developer. My teammates know me as a
+            My teammates know me as a
             highly cooperative developer and a hard-working person by always
-            bringing the most creative and awesome solutions for every project
-            that I face. I always try to be a cross-functional, business
-            oriented and quality focused developer on the team.
+            bringing solutions for every project that I face. I always try to 
+            be a cross-functional, business oriented and quality focused developer
+            on the team.
           </p>
         </header>
         <ul className="icons major">
@@ -176,11 +175,11 @@ const IndexPage = () => (
         <ul className="features">
           <li className="icon solid fa-laptop">
             <h3>Front-End</h3>
-            <p>HTML, CSS,JavaScript, JQuery, ReactJs & Node.js</p>
+            <p>HTML5, CSS3, JavaScript, JQuery, ReactJs, & NodeJs</p>
           </li>
           <li className="icon solid fa-code">
             <h3>Back-End</h3>
-            <p>PHP, MondoDb, React, Postgress, Postico.</p>
+            <p>PHP, knexJs, React, Postgress, GraphQL.</p>
           </li>
 
           {/* <li className="icon fa-heart">
@@ -199,7 +198,7 @@ const IndexPage = () => (
         <header>
           <h2>Open to new projects</h2>
           <p>
-            Do you like my work? im available to work with new projects, you can
+            I'm available to work with new projects, you can
             reach me clicking the icons below.
           </p>
         </header>

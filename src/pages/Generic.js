@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Resume_1 from "../assets/images/Resume_1.png";
 import Layout from '../components/Layout';
 
 const IndexPage = () => (
@@ -10,11 +10,9 @@ const IndexPage = () => (
       </header>
       <section className="wrapper style5">
         <div className="inner">
-          <h3>Jose Valenzuela</h3>
-          <p>
-            Updating Resume send me an email if you want to check out my resume
-            :)
-          </p>
+          
+          <img className="image-res" src={Resume_1} alt="resume" />
+        
         </div>
       </section>
     </article>

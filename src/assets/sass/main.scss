@@ -736,6 +736,21 @@ input[type="radio"] {
   }
 }
 
+// image resume //
+
+.image-res{
+  height: auto;
+  width: 950px;
+  @include breakpoint("<=small") {
+    height: auto;
+    width: 420px;
+  }
+}
+
+
+
+
+
 /* Image */
 
 .image {
