@@ -1,5 +1,5 @@
 import React from 'react';
-import Resume_1 from "../assets/images/Resume_1.png";
+import Resume_1 from "../assets/images/resume_1.png";
 import Layout from '../components/Layout';
 
 const IndexPage = () => (
