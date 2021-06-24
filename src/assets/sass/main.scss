@@ -743,7 +743,7 @@ input[type="radio"] {
   width: 950px;
   @include breakpoint("<=small") {
     height: auto;
-    width: 420px;
+    width: 315px;
   }
 }
 
@@ -1483,7 +1483,7 @@ button,
   @include padding(3em, 0);
 
   > .inner {
-    width: 60em;
+    width: 57em;
     margin: 0 auto;
 
     @include breakpoint("<=large") {
