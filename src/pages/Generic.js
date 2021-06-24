@@ -12,7 +12,7 @@ const IndexPage = () => (
         <div className="inner">
           
           <img className="image-res" src={resume} alt="resume" />
-        
+         
         </div>
       </section>
     </article>
